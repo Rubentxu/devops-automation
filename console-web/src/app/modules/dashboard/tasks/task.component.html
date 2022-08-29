@@ -1,0 +1,21 @@
+
+<mat-card class="card"  [attr.data-task-id]="task.id">
+  <div class="execute-btn text-center">
+    <span  class="lnr lnr-eye">
+      <button mat-raised-button color="accent" class="mat-focus-indicator mat-raised-button mat-button-base mat-accent">
+         <mat-icon >play_circle_filled</mat-icon>
+        Ejecutar
+       </button>
+    </span>
+  </div>
+  <mat-card-title class="card-header">{{task.name}}</mat-card-title>
+  <mat-divider></mat-divider>
+  <mat-card-content class="card-body">
+    <h4 class="card-title">{{task.tags? task.tags:'tags'}}</h4>
+    <p class="card-text">{{task.description}}</p>
+  </mat-card-content>
+  <mat-card-footer>
+<!--    <mat-progress-bar mode="indeterminate"></mat-progress-bar>-->
+
+  </mat-card-footer>
+</mat-card>

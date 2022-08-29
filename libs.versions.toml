@@ -1,0 +1,90 @@
+[versions]
+groovy = '2.5.14'
+# Jenkins
+jenkins-workflow-api = '2.40'
+jenkins-workflow-basic-steps = '2.20'
+jenkins-workflow-cps-plugin = '2.83'
+jenkins-workflow-durable-task-step = '2.36'
+jenkins-workflow-cps-global-library = '2.17'
+jenkins-workflow-job = '2.40'
+jenkins-workflow-multibranch = '2.22'
+jenkins-workflow-scm-step = '2.11'
+jenkins-workflow-step-api = '2.22'
+jenkins-workflow-support = '3.7'
+jenkins-core = '2.249'
+jenkins-test-harness = '2.72'
+jenkins-casc = '1.42'
+# Test
+junit = '4.13'
+jupiter = '5.7.1'
+jacoco = '0.8.5'
+spock = '2.2-M1-groovy-2.5'
+hamcrest = '2.2'
+
+[libraries]
+groovy-core = { module = 'org.codehaus.groovy:groovy-all', version.ref = 'groovy' }
+jenkins-core = { module = 'org.jenkins-ci.main:jenkins-core', version.ref = 'jenkins-core' }
+# Jenkins basic plugins
+jenkins-workflow-api = 'org.jenkins-ci.plugins.workflow:workflow-api:2.40'
+jenkins-workflow-basic-steps = 'org.jenkins-ci.plugins.workflow:workflow-basic-steps:2.20'
+jenkins-workflow-cps = 'org.jenkins-ci.plugins.workflow:workflow-cps:2.83'
+jenkins-workflow-cps-global-library = 'org.jenkins-ci.plugins.workflow:workflow-cps-global-lib:2.17'
+jenkins-workflow-durable-task-step = 'org.jenkins-ci.plugins.workflow:workflow-durable-task-step:2.36'
+jenkins-workflow-job = 'org.jenkins-ci.plugins.workflow:workflow-job:2.40'
+jenkins-workflow-multibranch = 'org.jenkins-ci.plugins.workflow:workflow-multibranch:2.22'
+jenkins-workflow-scm-step = 'org.jenkins-ci.plugins.workflow:workflow-scm-step:2.11'
+jenkins-workflow-step-api = 'org.jenkins-ci.plugins.workflow:workflow-step-api:2.22'
+jenkins-workflow-support = 'org.jenkins-ci.plugins.workflow:workflow-support:3.7'
+# Jenkins model plugins
+jenkins-pipeline-model-api = 'org.jenkinsci.plugins:pipeline-model-api:1.7.2'
+jenkins-pipeline-model-declarative-agent = 'org.jenkinsci.plugins:pipeline-model-declarative-agent:1.1.1'
+jenkins-pipeline-model-definition = 'org.jenkinsci.plugins:pipeline-model-definition:1.7.2'
+jenkins-pipeline-model-extensions = 'org.jenkinsci.plugins:pipeline-model-extensions:1.7.2'
+# Other Jenkins plugins
+jenkins-ansicolor = 'org.jenkins-ci.plugins:ansicolor:0.7.3'
+jenkins-config-file-provider = 'org.jenkins-ci.plugins:config-file-provider:3.6.3'
+jenkins-configuration-as-code-plugin = { module = 'io.jenkins:configuration-as-code', version.ref = 'jenkins-casc' }
+jenkins-configuration-as-code-test = { module = 'io.jenkins.configuration-as-code:test-harness', version.ref = 'jenkins-casc' }
+jenkins-durable-task = 'org.jenkins-ci.plugins:durable-task:1.34'
+jenkins-emailext = 'org.jenkins-ci.plugins:email-ext:2.69.2'
+jenkins-git = 'org.jenkins-ci.plugins:git:4.3.0'
+jenkins-gitchangelog = 'de.wellnerbou.jenkins:git-changelog:3.9'
+jenkins-gitlab-plugin = 'org.jenkins-ci.plugins:gitlab-plugin:1.5.19'
+jenkins-gitlab-api = 'io.jenkins.plugins:gitlab-api:1.0.6'
+jenkins-gitlab-branch-source = 'io.jenkins.plugins:gitlab-branch-source:1.5.1'
+jenkins-html-publisher = 'org.jenkins-ci.plugins:htmlpublisher:1.30'
+jenkins-jira = 'org.jenkins-ci.plugins:jira:3.1.1'
+jenkins-lockable-resources = 'org.6wind.jenkins:lockable-resources:2.5'
+jenkins-pipeline-stage-step = 'org.jenkins-ci.plugins:pipeline-stage-step:2.5'
+jenkins-pipeline-utility-steps = 'org.jenkins-ci.plugins:pipeline-utility-steps:2.8.0'
+jenkins-remote-file = 'io.jenkins.plugins:remote-file:1.7'
+jenkins-script-security = 'org.jenkins-ci.plugins:script-security:1.75'
+jenkins-scm-api = 'org.jenkins-ci.plugins:scm-api:2.6.3'
+jenkins-sonar = 'org.jenkins-ci.plugins:sonar:2.11'
+nodejs= 'org.jenkins-ci.plugins:nodejs:1.5.1'
+
+# Plugin dependencies
+gitlab-api = 'org.gitlab4j:gitlab4j-api:4.14.20'
+# Testing
+junit-core = { module = 'junit:junit', version.ref = 'junit' }
+junit-jupiter = { module = 'org.junit.jupiter:junit-jupiter-api', version.ref = 'jupiter' }
+junit-engine = { module = 'org.junit.jupiter:junit-jupiter-engine', version.ref = 'jupiter' }
+spock-core = { module = 'org.spockframework:spock-core', version.ref = 'spock' }
+spock-junit4 = { module = 'org.spockframework:spock-junit4', version.ref = 'spock' }
+hamcrest = { module = 'org.hamcrest:hamcrest', version.ref = 'hamcrest' }
+
+# Mock testing
+okhttp = 'com.squareup.okhttp3:okhttp:4.9.3'
+mockwebserver = 'com.squareup.okhttp3:mockwebserver:4.9.3'
+mockito = 'org.mockito:mockito-core:2.+'
+
+[bundles]
+unit-test = ['junit-core', 'junit-jupiter', 'junit-engine']
+jenkins-workflow = ['jenkins-workflow-api', 'jenkins-workflow-basic-steps', 'jenkins-workflow-cps', 'jenkins-workflow-durable-task-step', 'jenkins-workflow-cps-global-library', 'jenkins-workflow-job', 'jenkins-workflow-multibranch', 'jenkins-workflow-scm-step', 'jenkins-workflow-step-api', 'jenkins-workflow-support']
+jenkins-pipeline-model = ['jenkins-pipeline-model-api', 'jenkins-pipeline-model-definition', 'jenkins-pipeline-model-extensions', 'jenkins-pipeline-model-declarative-agent']
+
+[plugins]
+jenkins-shared-lib = 'com.mkobit.jenkins.pipelines.shared-library:0.10.1'
+jenkins-jpi = 'org.jenkins-ci.jpi:0.43.0'
+sonarqube = 'org.sonarqube:3.4.0.2513'
+

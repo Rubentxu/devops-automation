@@ -1,0 +1,44 @@
+{
+  "menu": {
+    "analytics": "Analítica",
+    "company": "Empresa",
+    "dashboards": "Dashboards",
+    "faqs": "FAQs",
+    "help-center": "Centro de Ayuda",
+    "support": "Soporte"
+  },
+  "msg": {
+    "E1": "El email ya en uso",
+    "U1": "Usuario registrado exitosamente",
+    "complete-data": "Ingrese los campos faltantes"
+  },
+  "recover-password": {
+    "email": "Email",
+    "fill-form": "Complete el formulario para restablecer su contraseña",
+    "forgot-password": "¿Olvidó su contraseña?",
+    "return-to": "Regresar a",
+    "send-reset-link": "Reiniciar Contraseña",
+    "sign-in": "Iniciar Sesión"
+  },
+  "sign-in": {
+    "dont-have-account": "¿No tiene una cuenta?",
+    "email": "Email",
+    "forgot-password": "¿Olvidó su contraseña?",
+    "invalid-credentials": "Credenciales inválidas",
+    "log-in": "Iniciar Sesión",
+    "password": "Contraseña",
+    "remember-me": "Recuérdame",
+    "sign-in": "Iniciar Sesión",
+    "sign-up": "Regístrate"
+  },
+  "sign-up": {
+    "alredy-have-account": "¿Ya tienes una cuenta?",
+    "email": "Email",
+    "go-to-login": "Para entrar al sitio vaya a",
+    "last-name": "Apellidos",
+    "name": "Nombre",
+    "password": "Contraseña",
+    "sign-in": "Iniciar Sesión",
+    "sign-up": "Registrarse"
+  }
+}

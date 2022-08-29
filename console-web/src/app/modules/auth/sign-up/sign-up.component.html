@@ -1,0 +1,50 @@
+<div class="flex flex-column flex-auto align-items-center sm:justify-content-center min-w-0 md:p-4 sm:pt-6 pt-3" *transloco="let t">
+  <div class="sm:w-auto sm:px-8 sm:py-5 sm:border-round sm:shadow-7">
+    <form [formGroup]="signUpForm">
+
+      <div class="w-100 mw-100 small:w-80 small:mx-0">
+        <div class="text-center">
+          <img src="../../../../assets/images/logo.png" alt="Image" height="100" class="mb-3" />
+          <div class="font-semibold text-4xl text-700">{{'sign-up.sign-up' | transloco}}</div>
+        </div>
+        <span [ngStyle]="{'display': isRegistered  ? 'none' : 'initial'}">
+          <div class="mb-3 font-medium align-items-baseline flex mt-1">
+            <span class="">{{'sign-up.alredy-have-account' | transloco}} </span>
+            <a class="font-medium no-underline ml-2 text-primary cursor-pointer"
+               [routerLink]="['/login']">{{'sign-in.sign-in' | transloco}}</a>
+          </div>
+          <div class="mb-1">
+            <label for="txtEmail" class="form-label">{{'sign-in.email' | transloco}}</label>
+            <input type="email" pInputText class="p-inputtext-sm form-control" id="txtEmail"
+                   [formControlName]="'email'">
+          </div>
+          <div class="mb-1">
+            <label for="txtName" class="form-label">{{'sign-up.name' | transloco}}</label>
+            <input type="text" pInputText class="p-inputtext-sm form-control" id="txtName" [formControlName]="'name'">
+          </div>
+          <div class="mb-1">
+            <label for="txtLastName" class="form-label">{{'sign-up.last-name' | transloco}}</label>
+            <input type="text" pInputText class="p-inputtext-sm form-control" id="txtLastName"
+                   [formControlName]="'lastname'">
+          </div>
+          <div class="mb-3">
+            <label for="txtPassword" class="form-label">{{ t('sign-in.password') }}</label>
+            <input type="password" pPassword class="p-inputtext-sm form-control" id="txtPassword"
+                   [formControlName]="'password'">
+          </div>
+
+          <button pButton (click)="doSignUp()" class="w-full" label="t('sign-up.sign-up')"></button>
+        </span>
+      </div>
+<!--      <p-messages></p-messages>-->
+      <span [ngStyle]="{'display': !isRegistered  ? 'none' : 'initial'}">
+        <div class="mb-3 font-medium align-items-baseline flex mt-1">
+          <span class="">{{'sign-up.go-to-login' | transloco}} </span>
+          <a class="font-medium no-underline ml-2 text-primary cursor-pointer"
+             [routerLink]="['/login']">{{'sign-in.sign-in' | transloco}}</a>
+        </div>
+      </span>
+    </form>
+
+  </div>
+</div>

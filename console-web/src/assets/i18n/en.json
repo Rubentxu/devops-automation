@@ -1,0 +1,44 @@
+{
+  "menu": {
+    "analytics": "Analytics",
+    "company": "Comapny",
+    "dashboards": "Dashboards",
+    "faqs": "FAQs",
+    "help-center": "Help Center",
+    "support": "Support"
+  },
+  "msg": {
+    "E1": "Email is already in use",
+    "U1": "User registered successfully",
+    "complete-data": "Enter the missing fields"
+  },
+  "recover-password": {
+    "email": "Email",
+    "fill-form": "Fill the form to reset your password",
+    "forgot-password": "Forgot password?",
+    "return-to": "Return to",
+    "send-reset-link": "Send reset link",
+    "sign-in": "Sign in"
+  },
+  "sign-in": {
+    "dont-have-account": "Don't have an account?",
+    "email": "Email",
+    "forgot-password": "Forgot password?",
+    "invalid-credentials": "Invalid credentials",
+    "log-in": "Log in",
+    "password": "Password",
+    "remember-me": "Remember me",
+    "sign-in": "Sign In",
+    "sign-up": "Sign up"
+  },
+  "sign-up": {
+    "alredy-have-account": "Already have an account?",
+    "email": "Email",
+    "go-to-login": "To access the site, go to",
+    "last-name": "Last Name",
+    "name": "Name",
+    "password": "Password",
+    "sign-in": "Sign In",
+    "sign-up": "Sign up"
+  }
+}

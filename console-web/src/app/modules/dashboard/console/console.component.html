@@ -1,0 +1,22 @@
+<div >
+
+  <div>
+    <form>
+
+      <h2>Filtering by Author</h2>
+      <select [ngModel]="message" (ngModelChange)="sendMessage($event)"  [ngModelOptions]="{standalone: true}" required>
+        <option value="Linus Torvalds">Linus Torvalds</option>
+        <option value="Martin Fowler">Martin Fowler</option>
+        <option value="Robert Martin">Robert Martin</option>
+      </select>
+    </form>
+  </div>
+  <h2>Messages</h2>
+  <p>
+  <div>
+    <p *ngFor="let m of messages">
+      {{m|json}}
+    </p>
+  </div>
+</div>
+<service-catalog></service-catalog>

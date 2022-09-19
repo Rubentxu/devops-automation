@@ -4,6 +4,7 @@ import devops.automation.orchestrator.domain.security.EnumRole
 import devops.automation.orchestrator.domain.security.Role
 import devops.automation.orchestrator.infraestructure.shared.jwt.JwtTokenAuthenticationFilter
 import devops.automation.orchestrator.infraestructure.shared.jwt.JwtTokenProvider
+import groovy.transform.CompileStatic
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.http.HttpMethod
@@ -20,15 +21,16 @@ import org.springframework.security.web.server.authorization.AuthorizationContex
 import org.springframework.security.web.server.context.NoOpServerSecurityContextRepository
 import reactor.core.publisher.Mono
 
+@CompileStatic
 @Configuration
 class SecurityConfig  {
 
 
     @Bean Map<EnumRole, Role> roleHandlers() {
         Map<EnumRole,Role> map = new EnumMap<>(EnumRole.class)
-        map.put(EnumRole.USER,new Role(id: 1, name: 'USER'))
-        map.put(EnumRole.MODERATOR,new Role(id: 2, name: 'MODERATOR'))
-        map.put(EnumRole.ADMIN,new Role(id: 3, name: 'ADMIN'))
+        map.put(EnumRole.USER,new Role(id: 1, name: EnumRole.USER))
+        map.put(EnumRole.REVIEWER,new Role(id: 2, name: EnumRole.REVIEWER))
+        map.put(EnumRole.ADMIN,new Role(id: 3, name: EnumRole.ADMIN))
         return map
     }
 

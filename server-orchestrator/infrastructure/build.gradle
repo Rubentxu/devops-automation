@@ -38,12 +38,13 @@ dependencies {
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation 'io.projectreactor:reactor-test'
-    testImplementation 'org.springframework.security:spring-security-test'
-    testImplementation 'org.springframework.integration:spring-integration-test'
+//    testImplementation 'io.projectreactor:reactor-test'
+//    testImplementation 'org.springframework.security:spring-security-test'
+//    testImplementation 'org.springframework.integration:spring-integration-test'
     testImplementation 'org.spockframework:spock-core:2.2-groovy-4.0'
     testImplementation 'org.spockframework:spock-spring:2.2-groovy-4.0'
-    testImplementation "org.spockframework:spock-junit4"  // you can remove this if your code does not rely on old JUnit 4 rules
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 
     // optional dependencies for using Spock
     testImplementation "org.hamcrest:hamcrest-core:2.2"   // only necessary if Hamcrest matchers are used
